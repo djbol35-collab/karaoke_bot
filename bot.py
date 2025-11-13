@@ -42,7 +42,7 @@ async def new_task_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Запуск бота
 if __name__ == "__main__":
-    app = ApplicationBuilder().token(TOKEN).build()
+    app = ApplicationBuilder().token(8154930923:AAFMv8f6p_bla_At8tadSjARGubXxTps7-4).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(new_task_callback, pattern="new_task"))
     print("✅ Бот запущен! Нажми Ctrl+C, чтобы остановить.")
